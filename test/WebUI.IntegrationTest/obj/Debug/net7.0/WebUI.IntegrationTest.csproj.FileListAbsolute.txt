@@ -1,0 +1,6 @@
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\obj\Debug\net7.0\WebUI.IntegrationTest.csproj.AssemblyReference.cache
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\obj\Debug\net7.0\WebUI.IntegrationTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\obj\Debug\net7.0\WebUI.IntegrationTest.AssemblyInfoInputs.cache
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\obj\Debug\net7.0\WebUI.IntegrationTest.AssemblyInfo.cs
+C:\Users\leopi\proyectopruebR\test\WebUI.IntegrationTest\obj\Debug\net7.0\WebUI.IntegrationTest.csproj.CoreCompileInputs.cache

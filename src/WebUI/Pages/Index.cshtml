@@ -1,0 +1,31 @@
+@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@functions
+{
+    double perimetro;
+    double area;
+    double volumen;
+
+    public void OnPost(double lado, double altura, double diagonal_M, double diagonal_m)
+    {
+        perimetro = Application.Rombo.CalcularPerimetro(lado);
+        area = Application.Rombo.CalcularArea(diagonal_m, diagonal_M);
+        volumen = Application.PrismaR.CalcularVolumen(area, altura);
+    }
+}
+
+<h1>
+    Calculadora de Área y Perímetro del Rombo; y Volumen de Prisma del Rombo
+</h1>
+
+<form method="Post">
+    Dame el lado: <input type="number" name="lado" step="0.01">
+    <br>
+    Dame la altura: <input type="number" name="altura" step="0.01">
+    <br>
+    Dame la diagonal menor: <input type="number" name="diagonal_m" step="0.01">
+    <br>
+    Dame la diagonal mayor:<input type="number" name="diagonal_M" step="0.01">
+    <button>Calcular</button>
+</form>
