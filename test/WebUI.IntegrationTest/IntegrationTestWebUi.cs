@@ -1,13 +1,13 @@
 using System.Net;
-using Microsoft.AspNetCore.Mvc.testing;
+using Microsoft.AspNetCore.Mvc.Testing;
 
 namespace WebUI.IntegrationTest;
 
-public class IntegrationTestWebUI : IClassFixture<WebApplicationFactory<Program>>
+public class IntegrationTestWebUI : IClassFixture<WebApplicationFactory<Startup>>
 {
-    private readonly WebApplicationFactory<Program> _factory;
+    private readonly WebApplicationFactory<Startup> _factory;
 
-    public IntegrationTestWebUI(WebApplicationFactory<Program> factory)
+    public IntegrationTestWebUI(WebApplicationFactory<Startup> factory)
     {
         _factory = factory;
     }
@@ -15,6 +15,9 @@ public class IntegrationTestWebUI : IClassFixture<WebApplicationFactory<Program>
     [Theory]
     [InlineData("Index")]
     [InlineData("Privacy")]
+    [InlineData("index2")]
+    [InlineData("index3")]
+    [InlineData("index4")]
     public async Task TestGetPages(string url)
     {
         // Arrange
